@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Meme Generator</title>
 </head>
 <body>
     <header>
@@ -14,11 +14,18 @@
     <main>
         <fieldset>
             <legend>Texto</legend>
-            <input type="text" name="text-input" id="text-input">
+            <input type="text" name="text-input" id="text-input" maxlength="60">
+            <input type="file" name="meme-insert" id="meme-insert">
         </fieldset>
         <section id="meme-image-container">
+            <img src="" alt="Imagem do Meme" id="meme-image">
             <p id="meme-text"></p>
         </section>
+        <nav>
+            <button id="fire">Borda Vermelha</button>
+            <button id="water">Borda Azul</button>
+            <button id="earth">Borda Verde</button>
+        </nav>
     </main>
     <footer>
 
