@@ -11,24 +11,23 @@
     <header>
         <h1>Meme Generator</h1>
     </header>
-    <main>
-        <fieldset>
-            <legend>Texto</legend>
-            <input type="text" name="text-input" id="text-input" maxlength="60">
+    <main class="container">
+        <div id="meme-info">
+            <input type="text" name="text-input" id="text-input" placeholder="Insira o texto aqui" maxlength="60">
             <input type="file" name="meme-insert" id="meme-insert">
-        </fieldset>
+        </div>
         <section id="meme-image-container">
             <img src="" alt="Imagem do Meme" id="meme-image">
             <p id="meme-text"></p>
         </section>
         <nav>
-            <button id="fire">Borda Vermelha</button>
-            <button id="water">Borda Azul</button>
-            <button id="earth">Borda Verde</button>
+            <button class="btn" id="fire">Borda Vermelha</button>
+            <button class="btn" id="water">Borda Azul</button>
+            <button class="btn" id="earth">Borda Verde</button>
         </nav>
     </main>
     <footer>
-
+        Página desenvolvida por Bruno Minelli. 2021.&trade;
     </footer>
     <script src="script.js"></script>
 </body>
