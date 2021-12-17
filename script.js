@@ -17,22 +17,28 @@ const buttonEarth = document.getElementById('earth');
 // Imagens pré-definidas
 const defaultMemeImages = document.getElementsByClassName('img');
 
-console.log(defaultMemeImages);
-
+/* Função: setDefaultMemeImage
+-- Define uma das imagens pré-definidas para se tornar um meme */
 function setDefaultMemeImage(event) {
   const images = event.target;
   elementeMemeImage.src = images.src;
 }
 
+/* Função: insertMemeText
+-- Insete texto ao meme */
 function insertMemeText() {
   const text = elementInputText.value;
   elementeMemeText.innerText = text;
 }
 
+/* Função: insertMemeImage
+-- Insere imagem ao meme */
 function insertMemeImage(event) {
   elementeMemeImage.src = URL.createObjectURL(event.target.files[0]);
 }
 
+/* Funções: setBorder
+-- Definem como será a borda do meme */
 function setBorderFire() {
   elementContainer.style.border = '3px dashed red';
 }
@@ -45,6 +51,7 @@ function setBorderEarth() {
   elementContainer.style.border = '6px groove green';
 }
 
+/* Execução dos eventos realizados por meio da interação da pessoa usuária */
 elementInputFile.addEventListener('change', insertMemeImage);
 elementInputText.addEventListener('input', insertMemeText);
 buttonFire.addEventListener('click', setBorderFire);
