@@ -14,6 +14,16 @@ const buttonFire = document.getElementById('fire');
 const buttonWater = document.getElementById('water');
 const buttonEarth = document.getElementById('earth');
 
+// Imagens pré-definidas
+const defaultMemeImages = document.getElementsByClassName('img');
+
+console.log(defaultMemeImages);
+
+function setDefaultMemeImage(event) {
+  const images = event.target;
+  elementeMemeImage.src = images.src;
+}
+
 function insertMemeText() {
   const text = elementInputText.value;
   elementeMemeText.innerText = text;
@@ -40,3 +50,7 @@ elementInputText.addEventListener('input', insertMemeText);
 buttonFire.addEventListener('click', setBorderFire);
 buttonWater.addEventListener('click', setBorderWater);
 buttonEarth.addEventListener('click', setBorderEarth);
+defaultMemeImages[0].addEventListener('click', setDefaultMemeImage);
+defaultMemeImages[1].addEventListener('click', setDefaultMemeImage);
+defaultMemeImages[2].addEventListener('click', setDefaultMemeImage);
+defaultMemeImages[3].addEventListener('click', setDefaultMemeImage);

@@ -58,11 +58,10 @@ input {
     min-height: 300px;
 }
 
-
 .btn {
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 700;
 }
 
@@ -77,4 +76,9 @@ input {
   
 #earth {
     background-color: green;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
 }
